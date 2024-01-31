@@ -1,4 +1,4 @@
-# Priority C Rules: Recommended {#priority-c-rules-recommended}
+# Правила приоритета C: Рекомендуются {#priority-c-rules-recommended}
 
 Where multiple, equally good options exist, an arbitrary choice can be made to ensure consistency. In these rules, we describe each acceptable option and suggest a default choice. That means you can feel free to make a different choice in your own codebase, as long as you're consistent and have a good reason. Please do have a good reason though! By adapting to the community standard, you will:
 
@@ -46,10 +46,10 @@ This is the default order we recommend for component options. They're split into
    - `data`
    - `computed`
 
-8. **Events** (callbacks triggered by reactive events)
+8. **События** (callbacks triggered by reactive events)
 
    - `watch`
-   - Lifecycle Events (in the order they are called)
+   - События жизненного цикла (в порядке вызова)
      - `beforeCreate`
      - `created`
      - `beforeMount`
@@ -121,16 +121,16 @@ This is the default order we recommend for component options. They're split into
     - `v-html`
     - `v-text`
 
-## Empty lines in component/instance options {#empty-lines-in-component-instance-options}
+## Пустые строки в опциях component/instance options {#empty-lines-in-component-instance-options}
 
-**You may want to add one empty line between multi-line properties, particularly if the options can no longer fit on your screen without scrolling.**
+**Вы можете добавить одну пустую строку между многострочными свойствами, особенно если параметры не помещаются на экране без прокрутки.**
 
 When components begin to feel cramped or difficult to read, adding spaces between multi-line properties can make them easier to skim again. In some editors, such as Vim, formatting options like this can also make them easier to navigate with the keyboard.
 
 <div class="options-api">
 
 <div class="style-example style-example-bad">
-<h3>Bad</h3>
+<h3>Плохо</h3>
 
 ```js
 props: {
@@ -162,11 +162,11 @@ computed: {
 </div>
 
 <div class="style-example style-example-good">
-<h3>Good</h3>
+<h3>Хорошо</h3>
 
 ```js
-// No spaces are also fine, as long as the component
-// is still easy to read and navigate.
+// Отсутвие пробелов также допустимо, пока компонент легко читать
+// и в нём сохраняется легкость навигации.
 props: {
   value: {
     type: String,
